@@ -10,7 +10,6 @@ public class Celular {
 	public Boolean temSinal() {
 
 		Boolean temSinal = Boolean.TRUE;
-
 		return temSinal;
 
 	}

@@ -1,4 +1,4 @@
-package br.com.db1.start.exercicio04;
+package br.com.db1.start.exercicio08;
 
 import java.util.Date;
 import java.util.List;
@@ -7,8 +7,7 @@ public class Pessoa {
 
 	private String nome;
 	private Date dataNascimento;
-	private Sexo sexo;
-	private List<Telefone> telefones;
+	private List<Endereco> enderecos;
 
 	public String getNome() {
 		return nome;
@@ -26,6 +25,14 @@ public class Pessoa {
 		this.dataNascimento = dataNascimento;
 	}
 
+	public List<Endereco> getEnderecos() {
+		return enderecos;
+	}
+
+	public void setEnderecos(List<Endereco> enderecos) {
+		this.enderecos = enderecos;
+	}
+
 	public List<Telefone> getTelefones() {
 		return telefones;
 	}
@@ -34,11 +41,6 @@ public class Pessoa {
 		this.telefones = telefones;
 	}
 
-	public Sexo getSexo() {
-		return sexo;
-	}
+	private List<Telefone> telefones;
 
-	public void setSexo(Sexo sexo) {
-		this.sexo = sexo;
-	}
 }
